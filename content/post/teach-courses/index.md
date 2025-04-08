@@ -1,5 +1,5 @@
 ---
-title: 👩🏼‍🏫 Teach academic courses
+title: 👩🏼‍🏫 Язык разметки Markdown
 summary: Embed videos, podcasts, code, LaTeX math, and even test students!
 date: 2023-10-24
 math: true
@@ -13,125 +13,97 @@ image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+## Что такое Markdown?
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
-
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
-
-## Video
-
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
-
-**Youtube**:
-
-    {{</* youtube D2vj0WcvH5c */>}}
-
-{{< youtube D2vj0WcvH5c >}}
-
-**Bilibili**:
-
-    {{</* bilibili BV1WV4y1r7DF */>}}
-
-{{< bilibili BV1WV4y1r7DF >}}
-
-**Video file**
-
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
-
-    {{</* video src="my_video.mp4" controls="yes" */>}}
-
-## Podcast
-
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
-
-    {{</* audio src="ambient-piano.mp3" */>}}
-
-Try it out:
-
-{{< audio src="ambient-piano.mp3" >}}
-
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
-
-renders as
-
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the `math: true` option in your page's front matter, or enable math for your entire site by toggling math in your `config/_default/params.yaml` file:
-
-```yaml
-features:
-  math:
-    enable: true
-```
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `$...$` or `$$...$$`, respectively.
-
-Example **math block**:
-
-```latex
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-```
-
-renders as
-
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-
-Example **inline math** `$\nabla F(\mathbf{x}_{n})$` renders as $\nabla F(\mathbf{x}_{n})$.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-```
-
-renders as
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
-
-## Code
-
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
+[Markdown](https://habitica.fandom.com/ruwiki%D0%A8%D0%BF%D0%B0%D1%80%D0%B3%D0%B0%D0%BB%D0%BA%D0%B0_%D0%BF%D0%BE_Markdown)  — это *легковесный язык разметки*, предназначенный для форматирования текста. Он позволяет быстро и просто создавать структурированные документы, которые затем можно конвертировать в HTML, PDF и другие форматы. Markdown был создан Джоном Грубером в 2004 году с целью сделать написание для интернета более удобным и читаемым.
 
 
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
+
+### Почему Markdown так популярен?
+
+Markdown прост в освоении и использовании. Его синтаксис интуитивно понятен, а результат — чистый и удобочитаемый текст. Вот несколько причин, почему Markdown стал стандартом в различных областях:
+
+*   **Простота:** Синтаксис Markdown минималистичен и легок для запоминания.
+*   **Универсальность:** Markdown поддерживается множеством платформ и приложений, включая GitHub, Reddit, Stack Overflow, и многие другие.
+*   **Портативность:** Markdown-файлы — это обычные текстовые файлы, которые можно открыть и редактировать в любом текстовом редакторе.
+*   **Конвертируемость:** Markdown-файлы легко преобразуются в HTML, PDF и другие форматы.
+*   **Читаемость:** Markdown-текст легко читается даже в исходном виде.
+
+### Основные элементы синтаксиса Markdown
+
+*   **Заголовки:** Обозначаются символами `#`. Количество `#` определяет уровень заголовка.
+
+    ```markdown
+    # Заголовок первого уровня
+    ## Заголовок второго уровня
+    ### Заголовок третьего уровня
     ```
 
-renders as
+*   **Списки:** Могут быть нумерованными или ненумерованными.
 
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
+    ```markdown
+    * Элемент списка 1
+    * Элемент списка 2
 
-## Inline Images
+    1. Первый элемент
+    2. Второй элемент
+    ```
 
-```go
-{{</* icon name="python" */>}} Python
-```
+*   **Выделение текста:** Курсив (`*текст*` или `_текст_`) и полужирный (`**текст**` или `__текст__`).
 
-renders as
+    ```markdown
+    *Курсив*
+    **Полужирный**
+    ```
 
-{{< icon name="python" >}} Python
+*   **Ссылки:**
+
+    ```markdown
+    [Текст ссылки](URL)
+    ```
+
+*   **Изображения:**
+
+    ```markdown
+    ![Альтернативный текст](URL изображения)
+    ```
+
+*   **Цитаты:** Обозначаются символом `>`.
+
+    ```markdown
+    > Это цитата
+    ```
+
+*   **Код:** Оборачивается символами `` ` `` для однострочного кода и ``` для многострочного кода.
+
+    ```markdown
+    `inline code`
+
+    ```python
+    def hello_world():
+        print("Hello, world!")
+    ```
+
+### Примеры использования Markdown
+
+Markdown широко используется для написания документации, ведения блогов, создания заметок, написания писем и многого другого. Вот несколько конкретных примеров:
+
+*   **README-файлы:** На GitHub и других платформах для хостинга кода Markdown используется для создания README-файлов, которые содержат информацию о проекте.
+*   **Статьи в блогах:** Многие блоги используют Markdown для написания и форматирования статей.
+*   **Документация:** Markdown идеально подходит для создания технической документации.
+*   **Заметки:** Markdown позволяет быстро и легко создавать структурированные заметки.
+
+### Заключение
+
+Markdown — это мощный и простой инструмент для форматирования текста. Его легко освоить, и он поддерживается множеством платформ и приложений. Если вы еще не используете Markdown, попробуйте его — вы не пожалеете!
+
+**Ключевые моменты:**
+
+*   Markdown - это простой и легкий язык разметки.
+*   Он используется для форматирования текста и создания структурированных документов.
+*   Markdown поддерживается множеством платформ и приложений.
+*   Синтаксис Markdown интуитивно понятен и легок для запоминания.
+*   Markdown идеален для написания документации, ведения блогов, создания заметок и многого другого.
+ 
 
 ## Did you find this page helpful? Consider sharing it 🙌
