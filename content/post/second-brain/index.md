@@ -1,6 +1,6 @@
 ---
 title: 🧠 Непрерывная интеграция и непрерывное развертывание (CI/CD).
-summary: Create a personal knowledge base and share your knowledge with your peers.
+summary: Статья о CI/CD
 date: 2025-03-20
 authors:
   - admin

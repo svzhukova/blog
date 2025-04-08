@@ -1,6 +1,6 @@
 ---
 title: 📈 Пост по прошедшей неделе 2-8 апреля
-summary: Use popular tools such as Plotly, Mermaid, and data frames.
+summary: Расскажу о процессе обучения на этой неделе
 date: 2023-10-25
 authors:
   - admin
