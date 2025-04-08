@@ -69,11 +69,7 @@ education:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
     summary: |
       GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 work:
   - position: School student
     company_name: School 1504
