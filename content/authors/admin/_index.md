@@ -137,7 +137,7 @@ awards:
     awarder: Coursera
     icon: weixin
     summary: |
-      I studied German for 3 years and passed the exam at level B1
+      Я изучалa немецкий язык 3 года и сдалa экзамен на уровень B1.
   - title: Python course
     url: https://stepik.org/
     certificate_url: https://stepik.org/cert/1735575?lang=en
@@ -146,8 +146,8 @@ awards:
     icon: python
     summary: |
       Learned:
-      - In this Python programming course, I learned the basic concepts of programming.
-      - The course also includes several advanced tasks that can make you rack your brains over coming up with algorithms and implementing programs for these tasks
+      - На этом курсе программирования на Python я изучил основные концепции программирования на языке python.
+      - Курс также включал несколько сложных заданий, которые заставляют поломать голову над придумыванием алгоритмов и реализацией программ для этих задач.
 
 ---
 
