@@ -31,20 +31,28 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:sofiazukova262@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/sof1zz/
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://github.com/svzhukova
+  - icon: academicons/elsevier
+    url: https://elibrary.ru/project_risc.asp
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=A0qZd4QAAAAJ&hl=ru
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/my-orcid?orcid=0009-0002-1289-6943
+  - icon: academicons/arxiv
+    url: https://arxiv.org/user/
+  - icon: academicons/inpn
+    url:  https://independent.academia.edu/SofiaZhukova5
+  - icon: academicons/researchgate
+    url: https://www.researchgate.net/signup.SignUpPublications.html
+  - icon: academicons/mendeley
+    url: https://www.mendeley.com/search/
+
+
 
 interests:
   - Программирование
